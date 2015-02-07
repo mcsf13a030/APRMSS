@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<table>
+              <tr>
+                  <td>ID</td>
+                  <td>Plane Name</td>
+                  <td>Plane Engg </td>
+                  <td>Plane model </td>
+                  <td>Plane commpany </td>
+              </tr>
+            @foreach (var a in Model)
+            {
+                <tr>
+                    <td>@a.Id</td>
+                    <td>@a.Plane_Name</td>
+                    <td>@a.Plane_Engg_No</td>
+                    <td>@a.Plane_Model</td>
+                    <td>@a.Plane_Company</td>
+
+
+                </tr>
+            
+            }
+
+          </table>

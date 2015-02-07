@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Company";
+}
+
+<h2>Company</h2>
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@section content{
+<section id="content">
+	  <div id="content">
+
+<div class="form_settings">
+            <h2>Adim Login</h2>
+     <form action="~/Admin/Company_register" method ="post">
+            <p>&nbsp;</p>
+			<p><span>Company Name</span><input class="contact" type="text" name="name" value="" /></p>
+			<p><span>Company Address</span><input class="contact" type="text" name="address" value="" /></p>
+    	    <p><span>Company Contact No</span><input class="contact" type="text" name="contact" value="" /></p>
+			<p><span>Company Head Quarter</span><input class="contact" type="text" name="Hq" value="" /></p>
+			<p><span>Company Status</span><input class="contact" type="text" name="status" value="" /></p>
+
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Register Company" /></p>
+       </form>     
+    </div><!--close form_settings-->
+
+          </section>
+}

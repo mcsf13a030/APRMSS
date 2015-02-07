@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Airplanes";
+}
+
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+
+
+@section content{
+<section id="content">
+	  <div id="content">
+
+<div class="form_settings">
+     <form action="~/Admin/Airplane_register" method ="post">
+            <h2>Adim Login</h2>
+            <p>&nbsp;</p>
+			<p><span>Name</span><input class="contact" type="text" name="name" value="" /></p>
+			<p><span>Plane Enggine No.</span><input class="contact" type="number" name="eng" value="" /></p>
+			<p><span>Model</span><input class="contact" type="text" name="model" value="" /></p>
+			<p><span>Company</span><input class="contact" type="text" name="com" value="" /></p>
+			
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Register Air Planes" /></p>
+         </form>
+         </div><!--close form_settings-->
+
+          </section>
+}

@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Gallary";
+}
+
+<h2>Gallary</h2>
+ @foreach (var i in Model)
+{
+     <img src="@i.Name" height="300" width="275" alt="" />
+}

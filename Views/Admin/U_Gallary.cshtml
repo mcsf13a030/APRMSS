@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Gallary";
+}
+@*<div id="menubar">
+      <ul id="menu">
+        <li>@Html.ActionLink("Home","index","Home")</li>
+        <li>@Html.ActionLink("Air Plane Registration","Airplanes","Admin")</li>
+        <li>@Html.ActionLink("Company Registration","Company","Home")</li>
+        <li>@Html.ActionLink("Gallary","Gallary","Admin")</li>
+        <li>@Html.ActionLink("View Detail","Detail","Admin")</li>
+
+      </ul>
+    </div><!--close menubar-->	*@
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+
+
+
+ 
+
+
+
+@section content{
+<section id="content">
+	  <div id="content">
+
+<div class="form_settings">
+
+
+<form action="/Admin/save" method="post" enctype="multipart/form-data" >
+
+     <h2>Adim Login</h2>
+            <p>&nbsp;</p>
+			<p><span>Upload Image:</span><input type="file" name="image" /></p>
+             <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Upload" /></p>
+         
+ 
+  @*  <input type="submit" value="upload" />*@
+</form>
+      </section>
+}
+

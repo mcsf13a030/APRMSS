@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Air Plane Registration Mannagement System</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+<link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+<script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="~/Scripts/image_slide.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>Air Plane Registration Mannagement System</h1>
+	    </div><!--close welcome-->
+	    <div id="BE A PROFFESSIONAL !!!!">
+	      <h1>Come And Have A Flight</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+
+
+	<div id="menubar">
+      <ul id="menu">
+        <li>@Html.ActionLink("Home","index","Home")</li>
+        <li>@Html.ActionLink("Contact","Contact","Home")</li>
+        <li>@Html.ActionLink("Ourwork","ourwork","Home")</li>
+        <li>@Html.ActionLink("Testimonials","testimonials","Home")</li>
+        <li>@Html.ActionLink("Projects","projects","Home")</li>
+         <li>@Html.ActionLink("Gallary","Gallary","Home")</li>
+      </ul>
+    </div><!--close menubar-->	
+    
+	<div id="site_content">		
+
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>No Speaking Guy</h2>
+            <p>I M ME AND DONOT CARE FOR ANY ONE</p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest News</h2>
+           
+            <p>Proud to be a Pakistani</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Contact</h2>
+            <p>Phone: 0332 4647331</p>
+            <p>Email: <a href="mailto:nospeaking845@gmail.com">nospeaking845@gmail.com</a></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+	
+	  <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="680" height="250" src="~/Images/home_1.jpg" alt="&quot;No Speaking Guy&quot;" /></li>
+          <li><img width="680" height="250" src="~/Images/home_2.jpg" alt="No Speaking Guy" /></li>
+        </ul>
+      </div>	  	 
+	 
+      @RenderSection("content", required: false)
+           <div id="content">
+                @RenderBody()
+
+      </div><!--close content-->   
+	</div><!--close site_content--> 
+ 
+  </div><!--close main-->
+  
+  <div id="footer">
+	  <a href="https://www.facebook.com/nofaltuspeakingguys">No Faltu Speaking Guys<br />Else I Will Kill You</a> 
+
+  </div><!--close footer-->  
+   @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+</body>
+</html>
